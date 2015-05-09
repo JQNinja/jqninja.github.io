@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=500" />
+    <title>Pixel Juice</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+
+
+    <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <!--<script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <style>
+    </style>
+
+
+</head>
+<body>
+    <main>
+        <div id="juice-mouse">
+            <img src="img/mouse.svg" />
+            <span>Keep scrolling</span>
+        </div>
+        <div id="juice-status">
+            <svg width="25" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <g id="juice-status-group">
+                        <rect fill="#ffffff" stroke-linejoin="null" stroke-linecap="null" x="7.142857" y="12.5" width="10.714285" height="63.690474" id="svg_7" />
+                        <ellipse fill="#ffffff" cx="12.5" cy="12.5" id="svg_5" rx="12.5" ry="12.5" />
+                        <g id="juice-status-home">
+                            <path d="m12.5,3.630952c-4.940476,0 -8.928572,3.988096 -8.928572,8.928571c0,4.940476 3.988095,8.928571 8.928572,8.928571c4.940475,0 8.92857,-3.988094 8.92857,-8.928571c0,-4.940476 -3.988094,-8.928571 -8.92857,-8.928571zm2.976191,11.964286c0,0.119047 0.119047,0.476191 0,0.476191h-1.428572c-0.119048,0 -0.357143,-0.357143 -0.357143,-0.476191v-2.440476c0,-0.119047 -0.059524,-0.059524 -0.178571,-0.059524h-1.845238c-0.119049,0 -0.357143,-0.119047 -0.357143,0.059524v2.440476c0,0.119047 -0.059525,0.476191 -0.178571,0.476191h-1.488095c-0.119048,0 -0.119048,-0.357143 -0.119048,-0.476191v-2.797619c0,-0.119048 0,-0.357142 0.178571,-0.416668l2.678571,-2.321427c0,0 0.059525,-0.059524 0.119049,-0.119046c0.059524,0 0.059524,-0.059525 0.178571,0c0.059525,0 0.059525,0.059523 0.119048,0.059523l2.619047,2.380951c0.119048,0.119049 0.059525,0.29762 0.059525,0.416668v2.797619l0,0zm1.42857,-3.273809c-0.17857,0.238095 -0.535713,0.238095 -0.773809,0.059523l-3.571427,-3.035713l-3.571428,3.035713c-0.238095,0.238096 -0.654762,0.059525 -0.773809,-0.059523c-0.178572,-0.238096 -0.178572,-0.535715 0.059524,-0.77381l3.928572,-3.392857c0.17857,-0.178571 0.535714,-0.178571 0.714285,0l3.928572,3.392857c0.238096,0.178573 0.238096,0.535714 0.059523,0.77381z" id="svg_2" />
+                        </g>
+                        <ellipse fill="#000000" stroke-linejoin="null" stroke-linecap="null" cx="12.5" cy="32.738094" id="juice-status-brain" rx="4.166667" ry="4.166667" />
+                        <ellipse fill="#000000" stroke-linejoin="null" stroke-linecap="null" cx="12.5" cy="45.833332" rx="4.166667" ry="4.166667" id="juice-status-heart" />
+                        <ellipse fill="#000000" stroke-linejoin="null" stroke-linecap="null" cx="12.5" cy="59.226189" rx="4.166667" ry="4.166667" id="juice-status-feel" />
+                        <ellipse fill="#ffffff" cx="12.5" cy="79.166665" rx="12.5" ry="12.5" id="svg_6" />
+                        <g id="juice-status-more">
+                            <path d="m12.5,70.29763c-4.940476,0 -8.928572,3.988083 -8.928572,8.928566c0,4.940468 3.988095,8.928574 8.928572,8.928574s8.92857,-3.988106 8.92857,-8.928574c0,-4.940483 -3.988094,-8.928566 -8.92857,-8.928566zm4.345238,8.571419l-1.785715,1.25c-0.17857,0.119041 -0.2381,0.35714 -0.17857,0.535706l0.654767,2.083344c0.059518,0.238091 0.059518,0.416664 -0.059529,0.535706c-0.05953,0.119049 -0.178572,0.178574 -0.297619,0.178574c-0.119049,0 -0.238091,-0.059525 -0.416668,-0.178574l-1.785713,-1.309517c-0.178572,-0.119057 -0.476191,-0.119057 -0.59524,0l-1.785713,1.309517c-0.297619,0.238106 -0.595238,0.178574 -0.714279,0c-0.119049,-0.119041 -0.119049,-0.297615 0,-0.535706l0.654757,-2.023811c0.059523,-0.178574 0,-0.476196 -0.178567,-0.535721l-1.785714,-1.249992c-0.357148,-0.238106 -0.29763,-0.476189 -0.29763,-0.595238s0.178576,-0.297615 0.53572,-0.297615h2.20238c0.178572,0 0.416668,-0.178581 0.476191,-0.357147l0.714287,-2.083344c0.119047,-0.357124 0.357149,-0.416664 0.47619,-0.416664s0.357137,0.05954 0.476197,0.416664l0.714279,2.083344c0.05953,0.178566 0.297619,0.357147 0.476196,0.357147h2.202375c0.416666,0 0.535715,0.178566 0.535715,0.297615s0.059523,0.297615 -0.238096,0.535713zm-2.499994,-0.297623l0,0c-0.05953,0 -0.119059,0 -0.119059,0c0,0 0.059528,0 0.119059,0z" id="svg_4" />
+                        </g>
+                    </g>
+            </svg>
+        </div>
+        <section>
+            <div id="status-home" class="spacer s0"></div>
+            <div id="intro-trigger" class="spacer s0"></div>
+            <div id="intro-pin" class="stage title-stage">
+                <div class="title title-big move-right">What</div>
+                <div class="title title-small move-right">does it mean to</div>
+                <div class="title title-medium move-right">live heart healthy?</div>
+            </div>
+            <div class="spacer s5"></div>
+            <div id="circles-trigger" class="spacer s0"></div>
+            <div id="circles-pin" class="stage">
+                <div id="circles-wrapper">
+                    <svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <title>Layer 1</title>
+                            <g id="circle-stop-smoking" class="choice-circle remove floating float-onset">
+                                <circle id="svg_5" stroke-width="50" stroke="rgba(123,177,229,0.6)" r="150" cy="362" cx="191" fill="rgb(123,177,229)" />
+                                <g id="svg_22">
+                                    <text fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="137.05935" y="211.44015" id="svg_20" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) ">Stop</text>
+                                    <text fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="137.05935" y="237.44015" id="svg_21" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) ">Smoking</text>
+                                </g>
+                            </g>
+                            <g id="circle-healthy-eating" class="choice-circle remove floating">
+                                <circle id="svg_26" stroke-width="50" stroke="rgba(254,155,40,0.6)" r="150" cy="534" cx="492" fill="rgb(254,155,40)" />
+                                <g id="svg_27">
+                                    <text id="svg_28" fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="255.967728" y="279.387795" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) ">Healthy</text>
+                                    <text id="svg_29" fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="255.967728" y="305.387795" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) ">Eating</text>
+                                </g>
+                            </g>
+                            <g id="circle-healthy-weight" class="choice-circle remove floating float-offset">
+                                <circle stroke-width="50" stroke="rgba(162,161,38,0.6)" r="150" cy="356" cx="800" fill="rgb(162,161,38)" id="svg_31" />
+                                <g id="svg_32">
+                                    <text fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="377.641417" y="209.069883" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) " id="svg_33">Healthy</text>
+                                    <text fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="377.641417" y="235.069883" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) " id="svg_34">Weight</text>
+                                </g>
+                            </g>
+                            <g id="circle-physical-activity" class="choice-circle">
+                                <circle id="svg_36" stroke-width="50" stroke="rgba(176,54,12,0.6)" r="150" cy="182" cx="495" fill="rgb(176,54,12)" />
+                                <g id="svg_37">
+                                    <text id="svg_38" fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="257.152862" y="140.33215" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) ">Physical</text>
+                                    <text id="svg_39" fill="#ffffff" stroke="rgba(123,177,229,0.6)" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" x="257.152862" y="166.33215" font-size="24" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" transform="matrix(2.5313607419648463,0,0,2.5313607419648463,-156.44808340484244,-190.8443791971702) ">Activity</text>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div id="activity-message">
+                        <span>It's not <em>just</em> about</span><br />
+                        <span>your <span class="beat">heart</span>.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="spacer s2"></div>
+        <section class="brain-stage">
+            <div id="status-brain" class="spacer s0"></div>
+            <div id="brain-title-trigger"></div>
+            <div id="brain-title-pin" class="stage title-stage">
+                <div class="title title-big move-right">What?</div>
+                <div class="title title-small move-right">Physical activity</div>
+                <div class="title title-medium move-right">helps my brain?</div>
+            </div>
+
+            <div id="brain-trigger" class="spacer s0"></div>
+            <div id="brain-pin" class="stage">
+                <div id="brainSequence">
+                    <img id="brainInflate" src="img/brain/brainMelt_0000.png" /><br>
+                </div>
+                <div class="message-text-block">
+                    <span> </span>
+                </div>
+            </div>
+
+
+            <div class="spacer s5"></div>
+        </section>
+        <section class="heart-stage">
+            <div id="status-heart" class="spacer s0"></div>
+            <div id="heart-title-trigger"></div>
+            <div id="heart-title-pin" class="stage title-stage">
+                <div class="title title-medium move-right">Hearts</div>
+                <div class="title title-big move-right">love</div>
+                <div class="title title-small move-right">working out?</div>
+            </div>
+
+            <div id="heart-trigger" class="spacer s0"></div>
+            <div id="heart-pin" class="stage">
+                <div id="heartSequence">
+                    <img id="heartBeat" src="" /><br>
+                </div>
+                <div class="message-text-block">
+                    <span> </span>
+                </div>
+            </div>
+            <div class="spacer s5"></div>
+        </section>
+
+        <section class="feel-stage">
+            <div id="status-feel" class="spacer s0"></div>
+            <div id="feel-title-trigger"></div>
+            <div id="feel-title-pin" class="stage title-stage">
+                <div class="title title-medium move-right">Do you <em>like</em></div>
+                <div class="title title-small move-right">how you</div>
+                <div class="title title-big move-right">feel?</div>
+            </div>
+
+            <div id="feel-trigger" class="spacer s0"></div>
+            <div id="feel-pin" class="stage">
+                <div id="feelSequence">
+                    <img id="feelings" src="img/feel/HackGirl_00444.png" /><br>
+                </div>
+                <div class="message-text-block">
+                    <span> </span>
+                </div>
+            </div>
+
+            <div class="spacer s5"></div>
+        </section>
+
+        <section class="more-stage">
+            <div id="status-more" class="spacer s0"></div>
+            <div id="more-trigger" class="spacer s0"></div>
+            <div id="more-pin" class="stage">
+                <div class="more-title">What could you start today?</div>
+                <div id="activity-wrapper">
+                    <div id="more-walking-link" class="more-activity"><img src="img/more/more-walking.svg" /></div>
+                    <div id="more-biking-link" class="more-activity"><img src="img/more/more-biking.svg" /></div>
+                    <div id="more-gardening-link" class="more-activity"><img src="img/more/more-gardening.svg" /></div>
+                    <div id="more-dancing-link" class="more-activity"><img src="img/more/more-dancing.svg" /></div>
+                </div>
+            </div>
+           
+            <div class="spacer s10"></div>
+        </section>
+        <div class="spacer s0"></div>
+    </main>
+
+
+
+
+</body>
+</html>
